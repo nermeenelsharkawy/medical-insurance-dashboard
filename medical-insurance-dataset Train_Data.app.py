@@ -1,17 +1,3 @@
-# ==========================================
-# 0. كود التثبيت الذاتي الإجباري (حل مشكلة السيرفر)
-# ==========================================
-import sys
-import subprocess
-
-# محاولة استدعاء المكتبات، وإذا لم تكن موجودة يتم تثبيتها فوراً
-try:
-    import plotly
-    import statsmodels
-except ModuleNotFoundError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly", "statsmodels"])
-# ==========================================
-
 # الآن يبدأ الكود الطبيعي الخاص بكِ:
 import streamlit as st
 import pandas as pd
